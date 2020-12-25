@@ -3,7 +3,7 @@ from Functions import emptyTest, NumberOfDays
 '''Open, read and parsing data from file separate by commas.
    Delete all empty values in list.'''
 os.chdir(r'D:\BEREGWIN\ISX')
-flmne = "mpo89039.220"
+flmne = "mpo70834.219"
 Fl = open(flmne, "r")
 strFile=Fl.read()
 Fl.close

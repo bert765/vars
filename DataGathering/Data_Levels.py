@@ -28,4 +28,4 @@ for i in range(0,len(lstData),1):                                               
             DataToLists(lstData, i, lstHiUpTime, lstHiUpLvl, \
                         lstHiDwTime, lstHiDwLvl, lstLowHiTime, \
                         lstLowHiLvl, lstLowDwTime, lstLowDwLvl)
-print(lstHiUpTime)
+print(lstHourLvls)

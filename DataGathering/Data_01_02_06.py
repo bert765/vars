@@ -23,3 +23,4 @@ for i in range(0,len(lstData),1):                                               
         if BlockIdx(lstData[i]) == 2 and lstData[i+1] != "-" and lstData[i+1] != "/":        #Looking for full block =02 with data
             DataToLists(lstData, i, lstWaveType, lstWaveDirM, lstWaveDirS, \
                         lstWaveHav, lstWaveHmx, lstWavePer, lstWaveLen)
+print(lstLevels)

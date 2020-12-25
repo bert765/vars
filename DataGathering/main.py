@@ -1,2 +1,3 @@
 from OpenModule import lstData
-print(lstData[2000:2500])
+from Functions import emptyTest
+print(emptyTest(lstData[-3]))
