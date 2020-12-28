@@ -23,5 +23,3 @@ for i in range(0,len(lstData),1):
                 lstDataDen[n] = lstData[i] 
                 i+=1
                 n+=1            
-print(lstDataSal)
-print(lstDataDen)

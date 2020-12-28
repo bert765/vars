@@ -1,5 +1,5 @@
 from OpenModule import lstData
-'''Write data from text blocks =91...=96'''
+'''Write data from text blocks =91...=96 to named lists'''
 Info_Mesure, Info_Change, Info_Danger, \
 Info_Crit, Info_Ice1, Info_Ice2 = [], [], [], [], [], []
 block_list = {'=91': Info_Mesure, '=92':Info_Change, '=93':Info_Danger, \
