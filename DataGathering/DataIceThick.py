@@ -1,4 +1,5 @@
-from OpenModule import lstData, Num
+from OpenModule import lstData
+from Vars import Num
 from Functions import DataToLists, ObjectNumCheck
 '''write data from blocks =26 and = 27 to list of lists'''
 

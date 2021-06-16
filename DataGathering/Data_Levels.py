@@ -1,4 +1,5 @@
-from OpenModule import lstData, Num
+from OpenModule import lstData
+from Vars import Num
 from Functions import DayHour24, BlockIdx, DataToLists
 '''Extracting hour-levels'''
 

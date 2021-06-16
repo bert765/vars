@@ -1,4 +1,5 @@
-from OpenModule import lstData, Num
+from OpenModule import lstData
+from Vars import Num
 from Functions import DataToLists, ObjectNumCheck
 
 ''' Write ice data after blocks =21, =25 into lists. 

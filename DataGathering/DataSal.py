@@ -1,4 +1,5 @@
-from OpenModule import lstData, Num
+from OpenModule import lstData
+from Vars import Num
 from Functions import IsData
 '''Write water salinity (=31,=32,=33) and 
    dencity (=41,=42,=43) data to lists'''

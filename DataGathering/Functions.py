@@ -1,3 +1,6 @@
+import os
+
+
 # dict for function NumberOfDays
 Sw = {1: 31, 2: 28, 3: 31, 4: 30,
       5: 31, 6: 30, 7: 31, 8: 31,
@@ -16,6 +19,10 @@ def emptyTest(lst):
 
 def NumberOfDays(Year, Month):
     # Check the month, year and return amount of day in it
+    if type(Month) is not int:
+        month_letters = ['a', 'b', 'c']
+        if Month in month_letters:
+            Month = 10 + month_letters.index(Month)
     if int(Year) % 4 == 0 and int(Month) == 2:
         return 29
     else:
@@ -102,3 +109,11 @@ def ObjectNumCheck(lst, pos):
         if type(lst[x]) == str:
             if lst[x][0:2] == "((" and lst[x+1] == 21:
                 return lst[x+2]
+
+
+def wrt(file_name, lstData, path):
+    os.chdir(path)
+    Fl = open(file_name, 'a')
+    Fl.write('\n')
+    for Data in lstData:
+        Fl.write(str(Data) + ',')

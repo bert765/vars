@@ -1,12 +1,12 @@
 import os
-from Functions import emptyTest, NumberOfDays
+from Functions import emptyTest
+from Vars import file_dir, files
 '''Open, read and parsing data from file separate by commas.
    Delete all empty values in list.'''
 
 
-os.chdir(r'C:\BEREGWIN\ISX')
-flmne = "mpo89024.820"
-Fl = open(flmne, "r")
+os.chdir(file_dir)
+Fl = open(files, "r")
 strFile = Fl.read()
 lstLines = strFile.splitlines()
 lstData = []
@@ -20,4 +20,3 @@ for i in range(0, len(lstData), 1):       # Change str to int if possible
         lstData[i] = int(lstData[i])
     except Exception:
         pass
-Num = NumberOfDays(lstData[3], lstData[2])      # Calculate amount of days in month
