@@ -112,6 +112,10 @@ def ObjectNumCheck(lst, pos):
 
 
 def wrt(file_name, lstData, path):
+    """Wrire given data to file
+       create new if file_name = 0
+       add data to the end of existing file
+       separate serial records by CR+LF"""
     os.chdir(path)
     Fl = open(file_name, 'a')
     Fl.write('\n')
